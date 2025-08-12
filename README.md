@@ -25,7 +25,7 @@ We commit to:
   Natural request (e.g., “my vision is blurry,” “I hear a murmur”) becomes a structured **detection plan**.
 
 - **Generative UI**  
-  SwiftUI renders screens from a **Plan JSON** spec (instructions, capture, analyze, results, next steps).
+  SwiftUI renders screen with personalized charts, sensors and displays/animations 
 
 - **Sensors when available**  
   Camera (retina/skin), microphone (heart/lung/cough), motion (gait/tremor), depth/LiDAR (wound/edema size), and PPG via camera (HR/HRV).
