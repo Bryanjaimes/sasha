@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/frontend/index.html">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/index.html" />
+              <option name="updatedContent" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;&#10;    &lt;title&gt;SASHA - Eye Health AI&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    &lt;h1&gt;Welcome to SASHA&lt;/h1&gt;&#10;    &lt;form id=&quot;uploadForm&quot; enctype=&quot;multipart/form-data&quot;&gt;&#10;        &lt;input type=&quot;file&quot; name=&quot;eyeImage&quot; accept=&quot;image/*&quot; required&gt;&#10;        &lt;button type=&quot;submit&quot;&gt;Upload&lt;/button&gt;&#10;    &lt;/form&gt;&#10;    &lt;div id=&quot;result&quot;&gt;&lt;/div&gt;&#10;    &lt;script&gt;&#10;        const form = document.getElementById('uploadForm');&#10;        form.addEventListener('submit', async (e) =&gt; {&#10;            e.preventDefault();&#10;            const formData = new FormData(form);&#10;            const response = await fetch('http://localhost:5000/upload', {&#10;                method: 'POST',&#10;                body: formData&#10;            });&#10;            const result = await response.json();&#10;            document.getElementById('result').innerText = result.message;&#10;        });&#10;    &lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/requirements.txt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/requirements.txt" />
+              <option name="originalContent" value="flask&#10;&#10;app = Flask(__name__)&#10;&#10;@app.route('/upload', methods=['POST'])&#10;def upload_image():&#10;    # Placeholder for image upload and processing logic&#10;    return jsonify({&quot;message&quot;: &quot;Image received. Processing...&quot;})&#10;&#10;if __name__ == '__main__':&#10;    app.run(debug=True)&#10;" />
+              <option name="updatedContent" value="flask" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

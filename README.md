@@ -19,24 +19,29 @@ We commit to:
 
 ---
 
-## What SASHA Does (MVP)
+## What SASHA Does (Phase 1: Medical Imaging and AI Diagnosis)
 
-- **Voice → Intent → Plan**  
-  Natural request (e.g., “my vision is blurry,” “I hear a murmur”) becomes a structured **detection plan**.
+The first phase of SASHA focuses on **medical imaging** and **AI-assisted diagnosis**, starting with eye health. The initial project involves building an AI model to assist doctors in diagnosing eye conditions using advanced imaging techniques.
 
-- **Generative UI**  
-  SwiftUI renders screen with personalized charts, sensors and displays/animations 
+### Key Features:
 
-- **Sensors when available**  
-  Camera (retina/skin), microphone (heart/lung/cough), motion (gait/tremor), depth/LiDAR (wound/edema size), and PPG via camera (HR/HRV).
+- **AI for Eye Health**
+  - Analyze images of the **cornea**, **anterior chamber**, **iris**, and **lens** captured via slit-lamp biomicroscope and indirect ophthalmoscope.
+  - Provide real-time analysis alongside the doctor to identify abnormalities such as **diabetic retinopathy (DR)**, **uveitis**, **glaucoma**, and more.
 
-- **On-device models**  
-  Quantized Core ML models; **Grad-CAM** for images, segment highlights for audio.
+- **Image Upload and Disease Detection**
+  - A website interface where users can upload eye images for disease detection.
+  - The AI model processes the image to detect potential conditions and provides a detailed report.
 
-- **Safety & next steps**  
-  QC checks, confidence, red-flag escalation, and educational info with citations. *Not for diagnosis.*
+- **Real-Time Computer Vision**
+  - The final product will leverage computer vision to analyze the eye in real-time during examinations.
+  - Assist doctors by highlighting abnormalities and providing clear visualizations of detected issues.
+
+- **Safety & next steps**
+  - QC checks, confidence scores, and educational information with citations. *Not for diagnosis.*
 
 ---
 
 ## Architecture (high level)
 
+## Step 1: Diabetic Retinopathy Detection
